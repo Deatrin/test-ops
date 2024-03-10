@@ -16,4 +16,5 @@ resources:
   - ./openebs.yaml
   - ./postfinance.yaml
   - ./stakater.yaml
+  - ./weave-gitops.yaml
   - ./xenitab.yaml
