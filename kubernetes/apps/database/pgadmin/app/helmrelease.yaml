@@ -67,14 +67,8 @@ spec:
       main:
         enabled: true
         ClassName: internal
-        annotations:
-          gethomepage.dev/enabled: "true"
-          gethomepage.dev/group: Infrastructure
-          gethomepage.dev/name: pgAdmin
-          gethomepage.dev/icon: mdi-database
-          gethomepage.dev/description: dbm
         hosts:
-          - host: &host "{{ .Release.Name }}.jennex.dev"
+          - host: &host "{{ .Release.Name }}.jennex.io"
             paths:
               - path: /
                 service:
