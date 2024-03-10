@@ -1,0 +1,12 @@
+---
+creation_rules:
+  - # IMPORTANT: This rule MUST be above the others
+    path_regex: talos/.*\.sops\.ya?ml
+    key_groups:
+      - age:
+          - "age1ry3yxrdedaz6jy4f5qqy7ezge0tn2ch85saghxhcauyfu3ddygjsd7v3ts"
+  - path_regex: kubernetes/.*\.sops\.ya?ml
+    encrypted_regex: "^(data|stringData)$"
+    key_groups:
+      - age:
+          - "age1ry3yxrdedaz6jy4f5qqy7ezge0tn2ch85saghxhcauyfu3ddygjsd7v3ts"
