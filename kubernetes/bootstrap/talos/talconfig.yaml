@@ -51,7 +51,7 @@ nodes:
             gateway: "192.168.70.1"
   - hostname: "test3"
     ipAddress: "192.168.70.12"
-    installDisk: "/dev/sdc"
+    installDisk: "/dev/sdb"
     talosImageURL: factory.talos.dev/installer/2d61dd07b20062062ea671b4d01873506103b67c0f7a4c3fb6cf4ee85585dcb8
     controlPlane: true
     networkInterfaces:
